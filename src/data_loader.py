@@ -284,10 +284,10 @@ if __name__ == "__main__":
     evaluate_model(weighted_rf_model, X_test, y_test)
     
     # Save the weighted model
-    save_model(weighted_rf_model, preprocessor, model_path="weighted_random_forest_pipeline.pkl")
+    save_model(weighted_rf_model, preprocessor, model_path="E:/credit_risk_assessment/credit-risk-assessment/models/weighted_random_forest_pipeline.pkl")
     
     # Test the pipeline with a sample input
-    pipeline = load_model("weighted_random_forest_pipeline.pkl")
+    pipeline = load_model("E:/credit_risk_assessment/credit-risk-assessment/models/weighted_random_forest_pipeline.pkl")
     sample_data = pd.DataFrame([{
         'person_age': 30,
         'person_income': 50000,
